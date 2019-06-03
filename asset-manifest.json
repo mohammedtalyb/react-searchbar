@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/react-searchbar/static/css/main.01855ff2.chunk.css",
+    "main.js": "/react-searchbar/static/js/main.fade0a61.chunk.js",
+    "main.js.map": "/react-searchbar/static/js/main.fade0a61.chunk.js.map",
+    "runtime~main.js": "/react-searchbar/static/js/runtime~main.785500dd.js",
+    "runtime~main.js.map": "/react-searchbar/static/js/runtime~main.785500dd.js.map",
+    "static/js/2.23f02aef.chunk.js": "/react-searchbar/static/js/2.23f02aef.chunk.js",
+    "static/js/2.23f02aef.chunk.js.map": "/react-searchbar/static/js/2.23f02aef.chunk.js.map",
+    "index.html": "/react-searchbar/index.html",
+    "precache-manifest.0b687059abbc9e40d8664f053471b3f0.js": "/react-searchbar/precache-manifest.0b687059abbc9e40d8664f053471b3f0.js",
+    "service-worker.js": "/react-searchbar/service-worker.js",
+    "static/css/main.01855ff2.chunk.css.map": "/react-searchbar/static/css/main.01855ff2.chunk.css.map"
+  }
+}
