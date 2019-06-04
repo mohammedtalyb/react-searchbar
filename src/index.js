@@ -8,7 +8,7 @@ import data from './data/states';
 ReactDOM.render(<App 
     alignIcon="right"
     data={data}
-    searchOnKey="place"
+    searchOnKey="name"
     showIcon="true"
     placeholder="Search by employee" />, document.getElementById('root'));
 

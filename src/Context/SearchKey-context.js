@@ -1,7 +1,8 @@
 import React from 'react';
 
 const searchKeyContext = React.createContext({
-    searchOnKey: ""
+    searchOnKey: "",
+    border: '1'
 });
 
 export default searchKeyContext;

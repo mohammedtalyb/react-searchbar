@@ -5,7 +5,7 @@ import Cockpit from '../components/Cockpit/Cockpit';
 class App extends Component {
 
   static defaultProps = {
-    alignIcon: 'left',
+    alignIcon: 'right',
     placeholder: 'Search...',
     showIcon: 'true'
   }
@@ -56,7 +56,7 @@ class App extends Component {
         <Cockpit 
         placeholder={this.state.placeholder}
         searchedResult={this.state.searchedResult}
-        searchState={this.searchHandler}
+        search={this.searchHandler}
         alignIcon={this.state.alignIcon}
         showIcon={this.state.showIcon}
         searchOnKey={this.state.searchOnKey} />
