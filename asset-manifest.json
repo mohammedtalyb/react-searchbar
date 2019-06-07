@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/react-searchbar/static/css/main.b307569b.chunk.css",
-    "main.js": "/react-searchbar/static/js/main.62de4473.chunk.js",
-    "main.js.map": "/react-searchbar/static/js/main.62de4473.chunk.js.map",
+    "main.css": "/react-searchbar/static/css/main.cce77624.chunk.css",
+    "main.js": "/react-searchbar/static/js/main.68637c4e.chunk.js",
+    "main.js.map": "/react-searchbar/static/js/main.68637c4e.chunk.js.map",
     "runtime~main.js": "/react-searchbar/static/js/runtime~main.785500dd.js",
     "runtime~main.js.map": "/react-searchbar/static/js/runtime~main.785500dd.js.map",
-    "static/js/2.23f02aef.chunk.js": "/react-searchbar/static/js/2.23f02aef.chunk.js",
-    "static/js/2.23f02aef.chunk.js.map": "/react-searchbar/static/js/2.23f02aef.chunk.js.map",
+    "static/js/2.8d98f5b2.chunk.js": "/react-searchbar/static/js/2.8d98f5b2.chunk.js",
+    "static/js/2.8d98f5b2.chunk.js.map": "/react-searchbar/static/js/2.8d98f5b2.chunk.js.map",
     "index.html": "/react-searchbar/index.html",
-    "precache-manifest.76e455d95e26222f355e85cb85b80528.js": "/react-searchbar/precache-manifest.76e455d95e26222f355e85cb85b80528.js",
+    "precache-manifest.6c46d54ab98cb998be5570a8b21590f8.js": "/react-searchbar/precache-manifest.6c46d54ab98cb998be5570a8b21590f8.js",
     "service-worker.js": "/react-searchbar/service-worker.js",
-    "static/css/main.b307569b.chunk.css.map": "/react-searchbar/static/css/main.b307569b.chunk.css.map"
+    "static/css/main.cce77624.chunk.css.map": "/react-searchbar/static/css/main.cce77624.chunk.css.map"
   }
 }
