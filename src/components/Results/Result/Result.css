@@ -1,0 +1,20 @@
+li.SearchedResult {
+    color: rgb(99, 97, 97);
+    padding: 10px 10px;
+}
+
+li.SearchedResult:first-of-type {
+    padding-top: 5px;
+}
+
+li.SearchedResult:hover {
+    background-color: rgba(1, 1, 248, 0.753);
+    color: white;
+}
+
+li.active {
+    background-color: rgba(1, 1, 248, 0.753);
+    color: white;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}

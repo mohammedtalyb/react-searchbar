@@ -1,13 +1,18 @@
-import React from 'react';
-import SearchedResults from '../SearchedResults/SearchedResults';
+import React, { useEffect, useRef } from 'react';
+import Results from '../Results/Results';
 import classes from './Cockpit.css'
 
 // cockpit.defaultProps = {
 //     border: '1px solid #ddd' 
 // }
-const cockpit = (props) => {
+const Cockpit = (props) => {
     let inputClass = "";
     let ulClass = "";
+    const inputRef = useRef();
+
+    useEffect(() => {
+        inputRef.current.focus();
+    },[]);
 
     if (props.alignIcon.toLowerCase() === "left") {
         inputClass += " " + classes.left;
@@ -19,11 +24,8 @@ const cockpit = (props) => {
         ulClass += classes.hideIcon;
     }
 
-    var assignedClass = '';
-const focusHandler = () => {
-    console.log("dd");
-    assignedClass = classes.focus;
-}
+    // var assignedClass = '';
+
 
     // const blurHandler = () => {
     //     assignedClass = "";
@@ -38,19 +40,26 @@ const focusHandler = () => {
 
     return (
         <div className={classes.Cockpit}>
-            <div className={assignedClass} >
+
+            <div>
+                <span>
                 <input
                     onChange={props.search}
                     className={inputClass}
                     placeholder={props.placeholder}
-                    onFocus={focusHandler}
+                    ref={inputRef}
                 />
+                </span>
                 <ul className={ulClass}>
-                    <SearchedResults searchedResults={props.searchedResult} searchOnKey={props.searchOnKey} />
+                    <Results 
+                    result={props.result} 
+                    searchOnKey={props.searchOnKey}
+                    selectedItemFunc={props.selectedItemFunc}
+                    selectedItem={props.selectedItem} />
                 </ul>
             </div>
         </div>
     );
 }
 
-export default cockpit;
+export default Cockpit;

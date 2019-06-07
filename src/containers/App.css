@@ -1,6 +1,47 @@
 .App {
   width: 50%;
   margin: 0 auto;
+  border: 1px solid rgb(168, 167, 167);
+  border-bottom: none;
+  border-radius: 5px;
+  margin-top: 40px;
+}
+
+.App .selectedDropdown {
+  border-bottom: 1px solid rgb(168, 167, 167);
+  border-radius: 5px;
+  position: relative;
+}
+
+.App .selectedDropdown p {
+  margin: 0;
+  padding: 8px 10px;
+  font-size: 14px;
+}
+
+.App .arrowUp{
+  position: absolute;
+  top: 12px;
+  left: 95%;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 7px solid black;
+
+}
+
+.App .arrowDown{
+  position: absolute;
+  top: 50%;
+  left: 95%;
+  transform: translatey(-50%);
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 7px solid black;
+
 }
 
 @media (max-width: 1152px) {

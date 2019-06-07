@@ -1,17 +1,18 @@
-.Cockpit {
-    border: 1px solid #ddd;
-    border-radius: 24px;
-    margin-top: 40px;
-    font-weight: 700;
+
+.Cockpit  {
+    margin: 10px 0;
+    border-bottom: 1px solid rgb(168, 167, 167);
+    border-radius: 5px;
+    max-height: 250px;
+    overflow-x: hidden;
+    z-index: 100;
+    /* background-color: #f4f4f4; */
 }
 
-.Cockpit:hover {
-    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
-}
 
 .Cockpit .focus {
     box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
-} 
+}
 
 .Cockpit .blur {
     box-shadow: none;
@@ -19,20 +20,26 @@
 
 .Cockpit input {
     font-weight: 700;
-    background-image: url('../../assets/images/download.png');
-    background-size: 32px 20px;
-    padding: 0;
-    margin-top: 20px;
+    background-image: url(../../assets/images/download.png);
+    background-size: 24px 16px;
     background-position: right 10px center;
     background-repeat: no-repeat;
-    width: 93%;
+    width: 100%;
     font-size: 16px;
     color: rgb(99, 97, 97);
-    padding-left: 30px;
-    border: none;
-    outline: 0;
+    padding: 8px 0;
+    padding-left: 10px;
+    border: 1px solid #ccc;
 }
 
+.Cockpit input:focus {
+    outline-color: rgb(101, 180, 154);
+}
+
+.Cockpit span {
+    display: block;
+    padding: 0 5px;
+}
 .Cockpit ::-webkit-input-placeholder {
     /* Chrome/Opera/Safari */
     font-weight: 400;
@@ -49,12 +56,11 @@
     background-image: none;
 }
 
-
-
 .Cockpit ul {
-    padding-left: 30px;
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 5px;
     list-style: none;
-    width: 90%;
 }
 
 .Cockpit ul.left {
@@ -64,20 +70,16 @@
 .Cockpit ul.hideIcon {
     padding-left: 30px;
 }
+
 @media (max-width: 992px) {
     .Cockpit input {
         background-position: right 15px center;
     }
 
-    
-
-@media (max-width: 576px) {
-    .Cockpit input {
-        background-position: right 15px center;
-        padding-left: 25px;
+    @media (max-width: 576px) {
+        .Cockpit input {
+            background-position: right 15px center;
+            padding-left: 25px;
+        }
     }
-    .Cockpit ul {
-        padding-left: 25px;
-    }
-}
 }
