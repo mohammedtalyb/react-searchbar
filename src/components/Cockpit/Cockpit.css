@@ -1,5 +1,4 @@
-
-.Cockpit  {
+.Cockpit {
     margin: 10px 0;
     border-bottom: 1px solid rgb(168, 167, 167);
     border-radius: 5px;
@@ -40,19 +39,18 @@
     display: block;
     padding: 0 5px;
 }
+
 .Cockpit ::-webkit-input-placeholder {
     /* Chrome/Opera/Safari */
     font-weight: 400;
 }
 
 .Cockpit input.left {
-    padding-left: 50px;
+    padding-left: 35px;
     background-position: left 10px center;
-    width: 80%;
 }
 
 .Cockpit input.hideIcon {
-    padding-left: 30px;
     background-image: none;
 }
 
@@ -63,23 +61,14 @@
     list-style: none;
 }
 
-.Cockpit ul.left {
-    padding-left: 50px;
-}
-
-.Cockpit ul.hideIcon {
-    padding-left: 30px;
-}
-
 @media (max-width: 992px) {
     .Cockpit input {
         background-position: right 15px center;
     }
+}
 
-    @media (max-width: 576px) {
-        .Cockpit input {
-            background-position: right 15px center;
-            padding-left: 25px;
-        }
+@media (max-width: 576px) {
+    .Cockpit input {
+        background-position: right 15px center;
     }
 }

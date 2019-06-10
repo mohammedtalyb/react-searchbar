@@ -40,15 +40,14 @@ const Cockpit = (props) => {
 
     return (
         <div className={classes.Cockpit}>
-
             <div>
                 <span>
-                <input
-                    onChange={props.search}
-                    className={inputClass}
-                    placeholder={props.placeholder}
-                    ref={inputRef}
-                />
+                  <input
+                      onChange={props.search}
+                      className={inputClass}
+                      placeholder={props.placeholder}
+                      ref={inputRef}
+                  />
                 </span>
                 <ul className={ulClass}>
                     <Results 
