@@ -6,7 +6,7 @@ import * as serviceWorker from './serviceWorker';
 import data from './data/states';
 
 ReactDOM.render(<App 
-    alignIcon="left"
+    alignIcon="right"
     data={data}
     searchOnKey="name"
     showIcon="true"

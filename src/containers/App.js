@@ -46,7 +46,6 @@ class App extends Component {
 
   selectedItemHandler = item => {
     this.setState({
-      result: this.state.filteredKeyResults,
       selectedItem: item,
       isSearchbar: false
     });
@@ -73,19 +72,14 @@ class App extends Component {
   }
 
   render() {
-    let itemValue = '';
-
-    if (this.state.selectedItem) {
-      itemValue = <div className={classes.selectedDropdown} >
+    return (
+      <div className={classes.App}>
+        <div className={classes.selectedDropdown} >
                     <p onClick={this.showSearchbarHandler}>{this.state.selectedItem[this.state.searchOnKey]}
                       <span className={this.state.isSearchbar ? classes.arrowUp : classes.arrowDown }></span>
                    </p>
-                  </div>;
-    }
-
-    return (
-      <div className={classes.App}>
-        {itemValue}
+                  </div>
+    
         {this.state.isSearchbar ? <Cockpit
           placeholder={this.state.placeholder}
           result={this.state.result}
